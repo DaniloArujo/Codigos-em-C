@@ -2,20 +2,14 @@
 
 int main(){
 	
-	//fazer um coment·rio
-	
+	//fazer um coment√°rio
 	
 	/*
 	asdad
 	asdasd
 	*/
 	
-	
 	printf("Arroz branco.\n");
 	
-	
-	
-	
-
 	return 0;
 }
