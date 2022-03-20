@@ -5,10 +5,7 @@ int main(){
 	
 	while (contador <= 5){
 		printf("%i\n",contador);
-		++contador;
-			
+		++contador;		
 	}
-	
-	
 	return 0;
 }
