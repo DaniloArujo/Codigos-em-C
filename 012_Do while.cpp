@@ -11,6 +11,5 @@ int main(){
 		printf("teste 2\n");
 	} while(i != 0);                   // comando do while executa depois verifica
 
-
 	return 0;
 }

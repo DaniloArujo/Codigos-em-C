@@ -7,8 +7,6 @@ int main(){
 	float resultado = num1 / num2;
 	
 	printf("%f\n",resultado);
-	
-	
-	
+		
 	return 0;
 }

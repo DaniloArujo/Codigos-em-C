@@ -8,15 +8,12 @@ int main(){
 	idade2 = 40;
 	idade3 = 45;
 	idade4 = 15;
-	
-	
+		
 	int idadetotal;
 	
 	idadetotal = idade1 * idade2 - idade3 / idade4;
 	
 	printf("%i\n",idadetotal);
-	
-	
 	
 	return 0;
 }

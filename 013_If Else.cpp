@@ -13,8 +13,5 @@ int main()
 	else{
 		printf("bebidas alcololicas estao liberadas");
 	}
-	
-	
-	
 	return 0;
 }

@@ -10,7 +10,5 @@ int main(){
 	printf("%f\n",decimal);
 	printf("%c\n",caractere);
 	
-	
-	
 	return 0;
 }

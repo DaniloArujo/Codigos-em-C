@@ -18,7 +18,6 @@ int main(){
 	else 
 		printf("%i nao e divisivel por %i\n", a, b);
 	
-
  return 0;
 	
 }
