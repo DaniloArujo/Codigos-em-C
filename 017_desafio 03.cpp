@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-//Exercício - Faça um programa inverta as cifras de um número. 
-
+//ExercÃ­cio - FaÃ§a um programa inverta as cifras de um nÃºmero. 
 
 int main(){
 	
