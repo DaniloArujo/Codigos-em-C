@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
 	
@@ -22,11 +21,11 @@ int main(){
 				if (dia <= 0 && dia > 31){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 30){
-					dia = ++ dia ;
+					dia == ++ dia ;
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 31){
-					dia = 1;
+					dia == 1;
 					mes == ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
@@ -68,7 +67,7 @@ int main(){
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 30){
-					dia = 1;
+					dia == 1;
 					mes == ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
@@ -202,7 +201,7 @@ int main(){
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 31){
-					dia = 1;
+					dia == 1;
 					mes == ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
@@ -216,7 +215,7 @@ int main(){
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 28){
-					dia = 1;
+					dia == 1;
 					mes == ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
@@ -226,11 +225,11 @@ int main(){
 				if (dia <= 0 && dia > 31){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 30){
-					dia = ++ dia ;
+					dia == ++ dia ;
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 31){
-					dia = 1;
+					dia == 1;
 					mes == ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
@@ -240,11 +239,11 @@ int main(){
 				if (dia <= 0 && dia > 30){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 29){
-					dia = ++ dia ;
+					dia == ++ dia ;
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 30){
-					dia = 1;
+					dia == 1;
 					mes == ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
