@@ -14,19 +14,19 @@ int main(){
 	scanf("%i",&ano);
 	
 	if (ano <= 0)
-		printf("informe um ano válido");
+		printf("informe um ano vÃ¡lido");
 	else if (ano % 4 == 0){
 		switch (mes){
 			case 1: { /*Janeiro*/
 				if (dia <= 0 && dia > 31){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 30){
-					dia == ++ dia ;
+					dia = ++ dia ;
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 31){
-					dia == 1;
-					mes == ++ mes ;
+					dia = 1;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -40,12 +40,12 @@ int main(){
 				}	
 				else if (dia = 29){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
 				break;
-			case 3: { /*março*/
+			case 3: { /*marÃ§o*/
 				if (dia <= 0 && dia > 31){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 30){
@@ -54,7 +54,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -67,8 +67,8 @@ int main(){
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 30){
-					dia == 1;
-					mes == ++ mes ;
+					dia = 1;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -82,7 +82,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -96,7 +96,7 @@ int main(){
 				}	
 				else if (dia = 30){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -110,7 +110,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -124,7 +124,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -138,7 +138,7 @@ int main(){
 				}	
 				else if (dia = 30){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -152,7 +152,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -166,7 +166,7 @@ int main(){
 				}	
 				else if (dia = 30){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -201,8 +201,8 @@ int main(){
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 31){
-					dia == 1;
-					mes == ++ mes ;
+					dia = 1;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -215,22 +215,22 @@ int main(){
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 28){
-					dia == 1;
-					mes == ++ mes ;
+					dia = 1;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
 				break;
-			case 3: { /*março*/
+			case 3: { /*marÃ§o*/
 				if (dia <= 0 && dia > 31){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 30){
-					dia == ++ dia ;
+					dia = ++ dia ;
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 31){
-					dia == 1;
-					mes == ++ mes ;
+					dia = 1;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -239,12 +239,12 @@ int main(){
 				if (dia <= 0 && dia > 30){
 					printf("Dia invalido");}	
 				else if (dia >= 1 && dia <= 29){
-					dia == ++ dia ;
+					dia = ++ dia ;
 					printf("%i/%i/%i\n",dia , mes, ano);
 				}	
 				else if (dia = 30){
-					dia == 1;
-					mes == ++ mes ;
+					dia = 1;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -258,7 +258,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -272,7 +272,7 @@ int main(){
 				}	
 				else if (dia = 30){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -286,7 +286,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -300,7 +300,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -314,7 +314,7 @@ int main(){
 				}	
 				else if (dia = 30){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -328,7 +328,7 @@ int main(){
 				}	
 				else if (dia = 31){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
@@ -342,7 +342,7 @@ int main(){
 				}	
 				else if (dia = 30){
 					dia = 1;
-					mes == ++ mes ;
+					mes = ++ mes ;
 					printf("%i/%i/%i\n",dia, mes, ano);
 				}
 			}
