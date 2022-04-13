@@ -1,14 +1,9 @@
-//desafio Somatório e média de uma lista de números – Construa um programa que
-//permita a um usuário informar uma série de números, até que um número negativo
-//seja fornecido. Ao final, imprima o somatório desses números, a média, o valor
-//máximo e o mínimo. Desconsidere o último número informado pelo usuário
-
-
-
-
+//desafio SomatÃ³rio e mÃ©dia de uma lista de nÃºmeros â€“ Construa um programa que
+//permita a um usuÃ¡rio informar uma sÃ©rie de nÃºmeros, atÃ© que um nÃºmero negativo
+//seja fornecido. Ao final, imprima o somatÃ³rio desses nÃºmeros, a mÃ©dia, o valor
+//mÃ¡ximo e o mÃ­nimo. Desconsidere o Ãºltimo nÃºmero informado pelo usuÃ¡rio
 
 #include <stdio.h>
-
 
 int main(){
 	
@@ -18,9 +13,7 @@ int main(){
 	float media;
 	float minimo ;
 	float maximo ;
-	
-
-	
+		
 	do{ 
 	
 		printf("escreva um numero: ");
@@ -51,7 +44,6 @@ int main(){
 		printf("A media dos numeros e igual a %.2f\n",media);
 		printf("O menor numenor numero foi %.0f\n",minimo);
 		printf("O maior numero foi %.0f\n",maximo);
-	
 	
 	return 0;
 }
