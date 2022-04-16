@@ -1,7 +1,7 @@
-//desafio Somatório e média de uma lista de números – Construa um programa que
-//permita a um usuário informar uma série de números, até que um número negativo
-//seja fornecido. Ao final, imprima o somatório desses números, a média, o valor
-//máximo e o mínimo. Desconsidere o último número informado pelo usuário
+//construa um programa que
+//permita a um usuario informar uma serie de numeros, ate que um numero negativo
+//seja fornecido. Ao final, imprima o somatorio desses numeros, a media, o valor
+//maximo e o minimo. Desconsidere o ultimo numero informado pelo usuario.
 
 #include <stdio.h>
 
