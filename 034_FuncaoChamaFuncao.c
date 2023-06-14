@@ -2,13 +2,8 @@
 
 //programa que soma o modulo de dois numeros
 
-float positivo (int x){
-    float modulo = x * (-1);
-    return modulo;
-}
-
-
 float somatorio (int x, int y){
+    float positivo (int x);
     if(x < 0){
        x = positivo(x);
     }
@@ -18,6 +13,11 @@ float somatorio (int x, int y){
 
     float somatorio = x + y;
     return somatorio;
+}
+
+float positivo (int x){
+    float modulo = x * (-1);
+    return modulo;
 }
 
 
