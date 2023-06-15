@@ -19,6 +19,7 @@ int fatorial (int x){
     if(x==0){
         resultado = 1;
     } 
+    
     else{
         resultado = x * fatorial(x - 1);
     }
