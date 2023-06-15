@@ -9,6 +9,7 @@ void main(void){
 
 }
 
+//deve-se colocar as dois colchetes indicando a matriz sendo que a segunda deve receber um numero delimitador
 void funcaoPrint(int x[3][3]){
     int i, j;
 
