@@ -20,5 +20,7 @@ int tamanhoString(char string[]){
     while(string[numCaracteres] != '\0'){
         ++numCaracteres;
     }
+    //lembrando que o \0 tambem é um caractere, então incrementamos 1;
+    ++numCaracteres;
     return numCaracteres;
 }
