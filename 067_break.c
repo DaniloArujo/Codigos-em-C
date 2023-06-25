@@ -11,7 +11,5 @@ int main(void){
             printf("%i Nao divide por 3 e por 9\n",i);
         }
     }
-
-
     return 0;
 }
