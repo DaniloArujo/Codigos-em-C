@@ -11,7 +11,7 @@ struct dicionario{
     char definicao[MAX_DEFINICAO];
 };
 
-bool comparaStrings( char string1[], char string2[]){
+bool comparaStrings(const char string1[], const char string2[]){
     int i = 0;
     while((string1[i] == string2[i])&&(string1[i] != '\0')&&(string2[i] != '\0')){
         i++;
@@ -23,7 +23,7 @@ bool comparaStrings( char string1[], char string2[]){
     }
 };
 
-int procuraTermos(struct dicionario sentencas[],char sentenca[], int numeroSentencas){
+int procuraTermos(const struct dicionario sentencas[],const char sentenca[],const int numeroSentencas){
     int i;
     int resultado = -1;
     for(i = 0; i< numeroSentencas; i++){
