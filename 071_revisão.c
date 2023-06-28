@@ -1,62 +1,70 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h>
-#include <string.h>
 
-#define MAX_PALAVRA 50
-#define MAX_DEFINICAO 50
-#define TAMANHODICIONARIO 5
+#define MAX_PALAVRA 30
+#define MAX_DEFINICAO   50
+#define NUM_TERMOS 5
 
-struct dicionario {
+struct dicionario{
     char palavra[MAX_PALAVRA];
     char definicao[MAX_DEFINICAO];
 };
 
-bool comparaPalavras(const char palavra1[], const char palavra2[]) {
+bool comparaStrings( char string1[], char string2[]){
     int i = 0;
-    while ((palavra1[i] == palavra2[i]) && (palavra1[i] != '\0') && (palavra2[i] != '\0')) {
+    while((string1[i] == string2[i])&&(string1[i] != '\0')&&(string2[i] != '\0')){
         i++;
-    }
-    if ((palavra1[i] == '\0') && (palavra2[i] == '\0')) {
+    };
+    if((string1[i] == '\0')&&(string2[i] == '\0')){
         return true;
-    } else {
+    }else{
         return false;
     }
-}
+};
 
-int procuraStrings(const struct dicionario dict[], const char procurar[], const int numPalavras) {
+int procuraTermos(struct dicionario sentencas[],char sentenca[], int numeroSentencas){
     int i;
     int resultado = -1;
-    for (i = 0; i < numPalavras; i++) {
-        if (comparaPalavras(procurar, dict[i].palavra)) {
+    for(i = 0; i< numeroSentencas; i++){
+        if(comparaStrings(sentenca,sentencas[i].palavra)){
             resultado = i;
             break;
         }
     }
     return resultado;
-}
+};
 
-int main(void) {
+
+int main(void){
+
+    const struct dicionario lista[NUM_TERMOS] = {
+        {"arroz","branco"},
+        {"feijao","marrom"},
+        {"alface","verde"},
+        {"tomate","vermelho"},
+        {"abobora","laranjada"},
+    };
+
     char palavraAProcurar[MAX_PALAVRA];
     int resultadoPesquisa;
 
-    const struct dicionario portugues[TAMANHODICIONARIO] = {
-        {"arroz", "branco"},
-        {"carne", "marrom"},
-        {"abobora", "laranja"},
-        {"chiclete", "rosa"},
-        {"milho", "amarelo"}
-    };
+    while (true){
+        printf("Escreva um termo a ser procurado: ");
+        scanf("%s", palavraAProcurar);
 
-    printf("Digite uma palavra: ");
-    scanf("%s", palavraAProcurar);
+        if(comparaStrings(palavraAProcurar,"cls")){
+            break;
+        }
 
-    resultadoPesquisa = procuraStrings(portugues, palavraAProcurar, TAMANHODICIONARIO);
+        resultadoPesquisa = procuraTermos(lista, palavraAProcurar, NUM_TERMOS);
 
-    if (resultadoPesquisa != -1) {
-        printf("%s\n", portugues[resultadoPesquisa].definicao);
-    } else {
-        printf("Palavra não encontrada no dicionário.\n");
+        if(resultadoPesquisa != -1){
+            printf("%s\n",lista[resultadoPesquisa].definicao);
+        }else{
+            printf("Palavra nao encontrada\n");
+        }
+
     }
-
     return 0;
 }
