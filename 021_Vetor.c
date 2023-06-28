@@ -14,8 +14,5 @@ int main(){
 		
 		printf("%i\n",vetor[i]);
 	}
-
 	return 0;
-	
-	
 }
