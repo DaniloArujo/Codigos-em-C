@@ -4,7 +4,8 @@
 
 #define MAX_PALAVRA 30
 #define MAX_DEFINICAO   50
-#define NUM_TERMOS 5
+#define NUM_TERMOS  5
+#define FINALIZA_PROGRAMA "cls"
 
 struct dicionario{
     char palavra[MAX_PALAVRA];
@@ -53,7 +54,7 @@ int main(void){
         printf("Escreva um termo a ser procurado: ");
         scanf("%s", palavraAProcurar);
 
-        if(comparaStrings(palavraAProcurar,"cls")){
+        if(comparaStrings(palavraAProcurar,FINALIZA_PROGRAMA)){
             break;
         }
 
@@ -64,7 +65,6 @@ int main(void){
         }else{
             printf("Palavra nao encontrada\n");
         }
-
     }
     return 0;
 }
