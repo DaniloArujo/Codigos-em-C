@@ -10,6 +10,8 @@ int main(void){
     printf("%i *pontx \n",*pontx);
     //imprime valor do espaco de memoria
     printf("%i pontx \n",pontx);
+    //endereço em hexadecimal
+    printf("%x pontx \n",pontx);
 
     *pontx = 20;
 
