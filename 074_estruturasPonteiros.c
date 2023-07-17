@@ -10,11 +10,16 @@ int main(void){
     };
 
     struct horario agora;
-    struct horario *depois;
+    struct horario *Pont_agora;
 
-    depois = &agora;
+    Pont_agora = &agora;
 
-    printf("%x,%x,%x\n",agora.hora,agora.minuto,agora.segundo);
+    //duas maneiras de acessar os dados da estrutura via ponteiro.
+    Pont_agora -> hora = 20;
+    (*Pont_agora).minuto = 40;
+    (*Pont_agora).segundo = 80;
+
+    printf("%i,%i,%i\n",agora.hora,agora.minuto,agora.segundo);
 
     return 0;
 }
