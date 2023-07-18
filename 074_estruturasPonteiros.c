@@ -22,4 +22,5 @@ int main(void){
     printf("%i,%i,%i\n",agora.hora,agora.minuto,agora.segundo);
 
     return 0;
+    
 }
