@@ -6,17 +6,26 @@ void atribuiValores(int *x){
     scanf("%i",x);
 }
 
+void somavalores( int *x, int*y, int*z){
+    *z = (*x) + (*y);
+}
+
 int main(void){
 
-    int num1, num2;
-    int *pontNum1, *pontNum2;
+    int num1, num2, soma;
+    int *pontNum1, *pontNum2, *pontSoma;
 
     pontNum1 = &num1;
     pontNum2 = &num2;
+    pontSoma = &soma;
 
-    printf("%p\n",pontNum1);
+    
     atribuiValores(pontNum1);
-    printf("%i",*pontNum1);
+    atribuiValores(pontNum2);
+    
+    somavalores(pontNum1,pontNum2,pontSoma);
+
+    printf("%i\n",soma);
 
     return 0;
 }
