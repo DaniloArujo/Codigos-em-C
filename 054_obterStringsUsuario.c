@@ -8,7 +8,7 @@ int main(void){
     printf("Digite os nomes: ");
     scanf("%s %s",&nome, &sobrenome);
 
-    printf("%s",nome);
-
+    printf("%s\n",nome);
+    printf("%s",sobrenome);
     return 0;
 }
