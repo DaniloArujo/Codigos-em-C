@@ -8,7 +8,7 @@ int main(){
 	int maeidade = 48;
 	int paiidade = 48;
 	
-	printf("minha idade = %i\nPai idade = %i\nMae idade %i",
+	printf("minha idade = %i\nidade Pai = %i\nidade Mae %i",
 	minhaidade,paiidade,maeidade);
 	
 	return 0;
