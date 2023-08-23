@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
 
@@ -13,6 +14,7 @@ int main(void){
     printf("Variavel int na funcao principal = %i \n",x);
     printf("Vetor na funcao principal = %i\n",vetor[1]);
     
+    system("pause");
     return 0;
 }
 

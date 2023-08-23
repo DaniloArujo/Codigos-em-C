@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void main(void){
 
@@ -11,6 +12,7 @@ void main(void){
     for(i = 0; i < 10; i++){
         printf("%i",vetor[i]);
     }
+    system("pause");
 
 }
 

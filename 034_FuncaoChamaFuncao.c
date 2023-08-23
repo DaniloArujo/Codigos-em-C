@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 //programa que soma o modulo de dois numeros
 
@@ -30,5 +31,6 @@ int main (void){
     int soma = somatorio(a,b);
 
     printf("%i",soma);
+    system("pause");
     return 0;
 }

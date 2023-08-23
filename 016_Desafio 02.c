@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	int a, b;
@@ -18,6 +19,6 @@ int main(){
 	else 
 		printf("%i nao e divisivel por %i\n", a, b);
 	
- return 0;
-	
+	system("pause");
+	return 0;	
 }

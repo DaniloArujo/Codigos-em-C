@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	int vetor[100];
@@ -28,5 +29,7 @@ int main(){
 	while(ordenadas<n);
 	
 	for(i=0;i<n;i++)
-		printf("%i\n",vetor[i]);			
+		printf("%i\n",vetor[i]);		
+
+	system("pause");	
 }

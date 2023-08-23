@@ -18,5 +18,6 @@ int main(void){
     printf("%i *pontx\n",*pontx);
     printf("%i pontx\n ",pontx);
     
+    system("pause");
     return 0;
 }

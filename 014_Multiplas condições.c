@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdlib.h>
 
 int main(){
 	
@@ -9,8 +10,8 @@ int main(){
 	
 	if(idade <= 5)
 		printf("bebe");
-	else if (idade > 5 && idade <= 10)     //conectando duas condições com &&
-		printf("criança\n");
+	else if (idade > 5 && idade <= 10)     //conectando duas condiï¿½ï¿½es com &&
+		printf("crianï¿½a\n");
 	else if (idade > 10 && idade <= 18)
 		printf("Adolescente\n");
 	else if (idade > 18 &&idade <= 50)
@@ -18,5 +19,6 @@ int main(){
 	else
 		printf("idoso\n");
 	
-return 0;
+	system("pause");
+	return 0;
 }

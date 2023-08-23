@@ -1,19 +1,21 @@
 #include <stdio.h>
+#include <stdio.h>
+#include <stdbool.h>
 
-/* colinha variáveis*/
+/* colinha variï¿½veis*/
 
 int main(){
 	
 /*	long dobra  valor de bytes */
-/*	const não pode seraltrada*/
+/*	const nï¿½o pode seraltrada*/
 /*	unsignet sem sinal*/	
 	
 	char variavelchar ='a';
 	printf("%c\n",variavelchar);
 	scanf("%c\n",&variavelchar);
-	printf("%c\n",varavelchar);
+	printf("%c\n",variavelchar);
 
-	bool variavelboll = true;
+	bool variavelbool = true;
 	printf("%i\n",variavelbool);
 	
 	int variavelint = 10;
@@ -21,14 +23,15 @@ int main(){
 	scanf("%i",&variavelint);
 	
 	float variavelfloat = 10.10;
-	printf("%f\n"variavelfloat);
-	scanf("%f"&variavelfloat);
+	printf("%f\n",variavelfloat);
+	scanf("%f",&variavelfloat);
 	printf("%f\n",variavelfloat);
 	
 	double variaveldouble = 10.10;
-	printf("%f\n"variaveldouble);
-	scanf("%f"&variaveldouble);
+	printf("%f\n",variaveldouble);
+	scanf("%f",&variaveldouble);
 	printf("%f\n",variaveldouble);
 	
+	system("pause");
 	return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct horario{
     int horas;
@@ -20,6 +21,8 @@ int main(void){
     for(i=0; i<5; i++){
         printf("%i:%i:%i\n", horas[i].horas,horas[i].minutos,horas[i].segundos);
     }
+    system("pause");
+    return 0;
 }
 
 struct horario inicializar(struct horario x, int i){

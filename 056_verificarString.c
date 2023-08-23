@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
 
@@ -14,6 +15,7 @@ int main(void){
         i++;
     };
     
+    system("pause");
     return 0;
 }
 

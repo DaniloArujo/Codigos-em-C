@@ -66,5 +66,6 @@ int main(void){
             printf("Palavra nao encontrada\n");
         }
     }
+    system("pause");
     return 0;
 }

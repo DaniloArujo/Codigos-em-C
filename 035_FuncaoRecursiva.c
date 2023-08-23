@@ -12,6 +12,7 @@ int main(void){
     resultado = fatorial(numero);
 
     printf("O fatorial de %i eh %i", numero, resultado);
+    system("pause");
     return 0;
 }
 

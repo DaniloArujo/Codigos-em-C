@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	
@@ -13,6 +14,7 @@ int main(){
 	area = base * altura;
 	
 	printf("O valor da area do retangulo e = %i",area);
-		
+
+	system("pause");	
 	return 0;
 }

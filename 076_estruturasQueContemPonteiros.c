@@ -31,7 +31,7 @@ int main(void){
     
     printf("Segundo: - %i\n",*agora.pontSegundos);
     
-    printf("Segundo endereco : - %i\n",agora.pontSegundos);
+    printf("Segundo endereco : - %p\n",agora.pontSegundos);
 
     getchar();
     return 0;

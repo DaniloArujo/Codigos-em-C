@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
     int tamanhoString(char string[]);
@@ -23,4 +24,5 @@ int tamanhoString(char string[]){
     //lembrando que o \0 tambem é um caractere, então incrementamos 1;
     ++numCaracteres;
     return numCaracteres;
+    system("pause");
 }

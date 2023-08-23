@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
 void imprima(void){
@@ -8,12 +9,12 @@ void imprima(void){
 
 int main(){
 	void imprima2(void); 
-	//por motivos de organização é preferível declarar as funções do programa
+	//por motivos de organizaï¿½ï¿½o ï¿½ preferï¿½vel declarar as funï¿½ï¿½es do programa
 	
 	imprima();
 	imprima2(); 
 	
-	
+	system("pause");
 	return 0;
 	
 }

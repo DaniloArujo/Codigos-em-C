@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
 	int var = 999999999;
@@ -20,4 +21,7 @@ int main(void){
 	printf("variavel double (%%g) = %g\n", doublevar);
 	printf("variavel double (%%a) = %a\n", doublevar);
 	printf("variavel double (%%.2f) = %.2f\n", doublevar);
+
+	system("pause");
+	return 0;
 }

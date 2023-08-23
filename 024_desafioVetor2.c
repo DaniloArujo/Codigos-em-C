@@ -2,6 +2,7 @@
 //a media, e aqueles que sao maiores e menores que a media
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	int valor[5],i,soma = 0;
@@ -29,5 +30,6 @@ int main(){
 		if(valor[i] < media)
 		printf("%d\n",valor[i]);
 	
+	system("pause");
 	return 0;	
 }

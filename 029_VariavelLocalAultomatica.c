@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdlib.h>
 
 
 int main(void){
@@ -13,5 +14,5 @@ void teste(void){
 	int variavel = 2;
 	variavel *= 2;
 	printf("%i\n",variavel);
-	
+	system("pause");
 }

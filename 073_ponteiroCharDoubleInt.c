@@ -30,5 +30,7 @@ int main(void){
     printf("Endereco soma = %i - valor soma = %f\n", Psoma, *Psoma);
 
     printf("\n\n\n");
+
+    system("pause");
     return 0;
 }

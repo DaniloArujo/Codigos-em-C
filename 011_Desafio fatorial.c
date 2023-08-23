@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 int main(){
 	
@@ -14,5 +15,6 @@ int main(){
 	
 	printf(" o resultado da fatoracao e: %i\n",resposta);
 	
+	system("pause");
 	return 0;
 }

@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 
 int main(void){
@@ -7,6 +8,7 @@ int main(void){
 	
 	printf("%i",matriz[2][1]);
 	
+	system("pause");
 	return 0;
 	
 }

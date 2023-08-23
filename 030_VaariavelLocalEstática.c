@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include <stdlib.h>
 
 int main(void){
 	void teste(void);
@@ -25,4 +25,5 @@ void teste(void){
 	
 	printf("Local automatica = %i\n",variavel);
 	printf("local estatica = %i\n",variavelEstatica);
+	system("pause");
 }

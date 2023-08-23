@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 
 int main(){
 	
@@ -6,5 +7,6 @@ int main(){
 	
 	printf("Minha idade e igual a %i\n",idade);
 	
+	system("pause");
 	return 0;
 }

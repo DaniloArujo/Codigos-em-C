@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
 
@@ -19,5 +20,6 @@ int main(void){
 
     printf("%i:%i:%i", agora.horas, agora.minutos, agora.segundos);
 
+    system("pause");
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 //Exercício - Faça um programa inverta as cifras de um número. 
 
@@ -29,5 +30,6 @@ int main(){
 		} while (numero != 0);
 		printf("\n");
 	}
+	system("pause");
 	return 0;
 }

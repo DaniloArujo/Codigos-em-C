@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 int main(){
 	
@@ -9,6 +10,6 @@ int main(){
 		printf("teste\n");
 		printf("asdf\n");		
 	}
-	
+	system("pause");
 	return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 
 void main(void){
 
@@ -6,6 +7,7 @@ void main(void){
     int i, j;
 
     funcaoPrint(matriz);
+    system("pause");
 
 }
 

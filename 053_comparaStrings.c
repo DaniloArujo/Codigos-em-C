@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
     _Bool stringsIguais(char string1[], int tamanho1, char string2[], int tamanho2);
@@ -46,5 +47,6 @@ _Bool stringsIguais(char string1[], int tamanho1, char string2[], int tamanho2) 
         }
     }
 
+    system("pause");
     return igual;
 }

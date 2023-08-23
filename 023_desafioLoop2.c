@@ -4,6 +4,7 @@
 //maximo e o minimo. Desconsidere o ultimo numero informado pelo usuario.
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	
@@ -29,7 +30,7 @@ int main(){
 			minimo = a;
 			}
 			
-			if (minimo == 0 and b == 1){
+			if (minimo == 0 && b == 1){
 			minimo = a;
 			}
 			
@@ -45,5 +46,6 @@ int main(){
 		printf("O menor numenor numero foi %.0f\n",minimo);
 		printf("O maior numero foi %.0f\n",maximo);
 	
+	system("pause");
 	return 0;
 }

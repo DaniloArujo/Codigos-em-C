@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -13,5 +14,6 @@ int main()
 	else{
 		printf("bebidas alcololicas estao liberadas");
 	}
+	system("pause");
 	return 0;
 }

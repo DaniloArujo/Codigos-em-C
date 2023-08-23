@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct horario{
     int horas;
@@ -18,6 +19,7 @@ int main(void){
     for(i=0;i<5;i++){
         printf("%i;%i;%i\n",hora[i].horas,hora[i].minutos,hora[i].segundos);
     }
+    system("pause");
     return 0;
 }
 

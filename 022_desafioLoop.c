@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int a;
 int i = 0;
@@ -46,6 +47,6 @@ int main(){
 		printf("matricula %s\n",matricula);
 		
 	}
-	
+	system("pause");
 	return 0;
 }

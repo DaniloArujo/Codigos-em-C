@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
@@ -11,5 +12,6 @@ int main(){
 		printf("teste 2\n");
 	} while(i != 0);                   // comando do while executa depois verifica
 
+	system("pause");
 	return 0;
 }

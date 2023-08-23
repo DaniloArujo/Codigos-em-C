@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void){
     int idade;
@@ -25,5 +26,6 @@ int main(void){
         printf("Deu errado");
     }
 
+    system("pause");
     return 0;
 }   

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	
@@ -11,5 +12,6 @@ int main(){
 	printf("minha idade = %i\nidade Pai = %i\nidade Mae %i",
 	minhaidade,paiidade,maeidade);
 	
+	system("pause");
 	return 0;
 }

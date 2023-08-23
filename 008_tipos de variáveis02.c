@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 int main(){
 	
@@ -8,5 +9,6 @@ int main(){
 	
 	printf("%f\n",resultado);
 		
+	system("pause");
 	return 0;
 }

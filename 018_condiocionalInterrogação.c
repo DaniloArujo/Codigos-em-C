@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 
 int main(){
 	
@@ -7,9 +8,10 @@ int main(){
 	int resposta;
 	
  	num1 < num2 ? printf("sim\n") : printf("nao\n");
-	num1 < num2 ? resposta =10 : resposta = -10;
+	num1 < num2 ? resposta = 10 : resposta = -10;
 	
 	printf("%i\n", resposta);
 	
+	system("pause");
 	return 0;
 }

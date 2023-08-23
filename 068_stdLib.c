@@ -10,5 +10,6 @@ int main(void){
     system("ipconfig");
 
 
+    system("pause");
     return 0;
 }

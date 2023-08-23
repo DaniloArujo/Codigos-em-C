@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 	int contador = 1;
@@ -7,5 +8,6 @@ int main(){
 		printf("%i\n",contador);
 		++contador;		
 	}
+	system("pause");
 	return 0;
 }
