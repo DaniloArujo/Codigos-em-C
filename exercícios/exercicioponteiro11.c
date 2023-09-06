@@ -3,7 +3,6 @@
 #define TAMSTRING 10
 
 
-
 struct pessoa {
     char nome[TAMSTRING];
     int idade;
