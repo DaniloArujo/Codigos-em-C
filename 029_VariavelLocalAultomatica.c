@@ -6,7 +6,8 @@ int main(void){
 	void teste(void);
 	teste();
 	teste();
-	
+	teste();
+	teste();
 	return 0;
 }
 

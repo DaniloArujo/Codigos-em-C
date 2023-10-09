@@ -17,8 +17,8 @@ void teste(void){
 	int variavel = 2;
 	variavel *= 2;
 	
-	static int variavelEstatica = 2;
-	variavelEstatica *=2;
+	static int variavelEstatica = 0;
+	variavelEstatica ++;
 	
 	
 	
