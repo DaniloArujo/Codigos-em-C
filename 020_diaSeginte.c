@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Programa feito para o curso de engenharia de software. É ineficiente porêm funciona muito bem.
+
+
 int main(){
 	
 	int dia, mes, ano;
