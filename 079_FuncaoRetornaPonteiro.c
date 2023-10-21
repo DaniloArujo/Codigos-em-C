@@ -1,32 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Este programa cria uma lista encadeada de elementos, permite ao usuário pesquisar por um valor nessa lista
+// e imprime o resultado, indicando se o valor foi encontrado ou não.
 
-struct lista{
-        int valor;
-        struct lista *next;
-    };
-
-struct lista *procuravalor(int valor, struct lista *listaPonteiro){
-
-    while(listaPonteiro != (struct lista *)0){
-        if(listaPonteiro->valor == valor){
-            return listaPonteiro;
-        }else{
-            listaPonteiro = listaPonteiro->next;
-        }
-    }
-
-    return(struct lista *) 0;
+struct lista {
+    int valor;
+    struct lista* next;
 };
 
+struct lista* procuravalor(int valor, struct lista* listaPonteiro) {
+    // Percorrendo a lista até encontrar o valor ou o final
+    while (listaPonteiro != (struct lista*)0) {
+        if (listaPonteiro->valor == valor) {
+            return listaPonteiro; // Valor encontrado, retornando o ponteiro para a estrutura
+        } else {
+            listaPonteiro = listaPonteiro->next; // Avançando para o próximo elemento da lista
+        }
+    }
+    return (struct lista*)0; // Valor não encontrado, retornando um ponteiro nulo
+}
 
-int main(void){
-
+int main(void) {
+    // Criando elementos da lista e inicializando seus valores
     struct lista m1, m2, m3, m4, m5, m6, m7, m8, m9, m10;
-    struct lista *resultado;
-    int valor;
-
     m1.valor = 1;
     m2.valor = 2;
     m3.valor = 3;
@@ -38,8 +35,8 @@ int main(void){
     m9.valor = 9;
     m10.valor = 10;
 
-    struct lista *hook = &m1;
-
+    // Configurando os ponteiros "next" para criar a lista encadeada
+    struct lista* hook = &m1;
     m1.next = &m2;
     m2.next = &m3;
     m3.next = &m4;
@@ -49,12 +46,14 @@ int main(void){
     m7.next = &m8;
     m8.next = &m9;
     m9.next = &m10;
-    m10.next = (struct lista*)0;
+    m10.next = (struct lista*)0; // O último elemento da lista aponta para NULL
 
+    int valor;
     printf("Digite um valor: ");
-    scanf("%i",&valor);
+    scanf("%i", &valor);
 
-    resultado = procuravalor(valor,hook);
+    // Chamando a função procuravalor para encontrar o valor na lista
+    struct lista* resultado = procuravalor(valor, hook);
 
     if (resultado != NULL) {
         printf("Valor encontrado: %i\n", resultado->valor);

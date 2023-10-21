@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-	printf("Hello, World!\n");
+// Este programa imprime a mensagem "Hello, World!" na tela e, em seguida, pausa a execução.
+
+int main() {
+    printf("Hello, World!\n");
 	
-	system("pause");
-	return 0;
+    system("pause");
+    return 0;
 }
