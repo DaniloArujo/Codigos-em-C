@@ -11,6 +11,16 @@ int main(void){
         printf("O endereco de memoria %p contem o valor %i\n",ponteiro + loop,*ponteiro + loop);
     }
 
+    printf("##################################################\n");
+
+    for(loop = 0; loop < 10; loop++){
+       *(ponteiro + loop) = loop + 10;
+    };
+
+    for(loop = 0; loop < 10; loop++){
+        printf("O endereco de memoria %p contem o valor %i\n",ponteiro + loop,*ponteiro + loop);
+    }
+
     system("pause");
     return 0;
 }
