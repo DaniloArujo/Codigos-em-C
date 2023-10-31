@@ -8,7 +8,7 @@ int main(void){
     file = fopen("..\\teste.txt","w");
     //CASO EU MODIFIQUE O PROGRAMA E MANTENHA A TAG W O ARQUIVO SERÁ APAGADO E REESCRITO.
 
-    fprintf(file,"Este é o meu arquivo .txt");
+    fprintf(file,"10,20,30");
     fclose(file);
 
     return 0;
