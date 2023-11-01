@@ -23,8 +23,7 @@ int main(void){
 
     //todas as variáveis no heap precisam ser liberadas manualmente.
     free(p);
-    printf("#########################################\n");
-    printf("Endereco: %p\nValor contido memoria: %i\n",p,*p);
+    p = NULL;
 
     
     p = (int*)malloc(sizeof(int));
