@@ -25,12 +25,23 @@ int main(void){
     free(p);
     p = NULL;
 
-    
+    // a função calloc separa os indereços de memória e inicializa com zero. recebe dois argumentos (int, size) sendo o primeiro a quantidade
     p = (int*)malloc(sizeof(int));
     *p = 20;
 
     
     printf("#########################################\n");
     printf("Endereco: %p\nValor contido memoria: %i\n",p,*p);
+
+    int *q;
+    q = (int*)malloc(4 * sizeof(int));
+    *q = 20;
+    *(q+1) = 22;
+
+    
+    printf("#########################################\n");
+    printf("Endereco: %p\nValor contido memoria: %i\n",q,*q);
+    
+    printf("Endereco: %p\nValor contido memoria: %i\n",q[1],*(q + 1));
     return 0;
 }
