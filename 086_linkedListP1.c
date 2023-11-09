@@ -1,3 +1,4 @@
+//criando uma lista encadeada simples
 #include <stdio.h>
 #include <stdlib.h>
 
