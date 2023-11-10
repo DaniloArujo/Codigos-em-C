@@ -1,4 +1,4 @@
-//deletando o primeiro nó
+//Excluindo o ultimo nó
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,15 +43,34 @@ void printList(struct node* head){
     printf("\n");
 };
 
-void deleteFirstNode(struct node** head){
+void deleteN(struct node** head, int n){
     if(*head == NULL){
-        printf("Lista vazia\n");
+        printf("Empty list\n");
+        return;
+    };
+
+    struct node* temp = *head;
+
+    if(n == 1){
+        *head = temp->next;
+        free(temp);
+    };
+
+    
+    for(int loop = 0; loop< n-2 && temp != NULL; loop++){
+        temp = temp->next;
+    };
+
+    if(temp == NULL || temp->next == NULL){
+        printf("Numero não encontrado");
         return;
     }
-    struct node* temp = *head;
-    *head = (*head)->next;
-    free(temp);
-};
+    
+    struct node* temp2 = temp->next;
+    temp->next = temp2->next;
+    free(temp2);
+
+}
 
 int main(void){
 
@@ -66,19 +85,14 @@ int main(void){
     insertAtN(&head,3,4); // 4,5,2,3,3
     insertAtN(&head,6,2); // 4,6,5,2,3,3
     insertAtN(&head,2,1); // 2,4,6,5,2,3,3
+
     printList(head);
     printf("######################\n");
 
-    deleteFirstNode(&head);
-    printList(head);
-    deleteFirstNode(&head);
-    printList(head);
-    deleteFirstNode(&head);
-    printList(head);
-    deleteFirstNode(&head);
-    printList(head);
-
-
     
+    deleteN(&head,2);
+    printList(head);
+
+
     return 0;
 }

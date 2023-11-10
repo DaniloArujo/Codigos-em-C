@@ -1,4 +1,4 @@
-//inserindo nó na posição n
+//Excluindo o ultimo nó
 
 #include <stdio.h>
 #include <stdlib.h>
