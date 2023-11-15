@@ -35,11 +35,11 @@ void reversePrintNodes(struct node* head){
 int main(void){
 
     srand(time(NULL));
-    int randNumber;
     struct node* headPointer = NULL;
 
 
     for(int loop = 0; loop <10; loop++){
+        int randNumber;
         randNumber = rand() % 10;
 
         insert(&headPointer,randNumber);
