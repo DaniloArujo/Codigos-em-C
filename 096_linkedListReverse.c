@@ -46,8 +46,8 @@ int main(void){
 
     for(int loop = 0; loop < 10; loop++){
         int randNumber = rand() %10;
-        printf("Numero %i inserido\n",randNumber);
         insertNode(randNumber,&headPointer);
+        printf("Numero %i inserido\n",randNumber);
     };
 
     printNodes(headPointer);
