@@ -6,7 +6,7 @@ int main(void){
 	int var2 = 10;
 	double doublevar = 100.123456789;
 	
-	//formata��o de vari�veis inteiras
+	//formatação de variaveis inteiras
 	
 	printf("Variavel inteira (%%d) = %7d\n", var2);
 	printf("Variavel inteira (%%i) = %i\n", var);
