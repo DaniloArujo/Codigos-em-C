@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define CHARSIZE 50
 
 /*
@@ -28,6 +29,12 @@ void imprimeAluno(struct aluno* alunoptr){
 
 };
 
+void modificaAluno(struct aluno* alunoptr){
+    strcpy(alunoptr->nome,"Douglas");
+    alunoptr->idade = 20;
+    alunoptr->nota = 3,5;
+};
+
 int main(void){
 
     struct aluno aluno01 = {
@@ -42,6 +49,9 @@ int main(void){
     //printf("A idade do aluno %s eh: %i, e sua nota foi: %f", aluno01.nome, aluno01.idade,//aluno01.nota);
 
     imprimeAluno(aluno01ptr);
+    modificaAluno(aluno01ptr);
+    imprimeAluno(aluno01ptr);
+
 
     return 0;
 }
