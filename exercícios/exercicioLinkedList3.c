@@ -32,6 +32,27 @@ void insertAtBeginning(struct node** p, int number){
     }
 };
 
+void insertingAtEnd( struct node** p, int number){
+    struct node *new = (struct node*)malloc(sizeof(struct node));
+    new->value = number;
+    new->next = NULL;
+    
+    if(new == NULL){
+            printf("Momory allocation failure");
+            return;
+        } 
+
+    if(*p == NULL){
+        (*p) = new;
+    }else{
+        struct node *temp = *p; 
+        while(temp->next != NULL){
+            temp = temp->next;
+        }
+        temp->next = new;
+    }
+
+}
 
 //not optimezed way
 void deletelastNode(struct node** p){
@@ -55,6 +76,7 @@ int main(void){
 
     struct node* list = NULL;
 
+    //inserting
     insertAtBeginning(&list, 6);
     printList(&list);
     insertAtBeginning(&list, 12);
@@ -68,8 +90,13 @@ int main(void){
     insertAtBeginning(&list, 2);
     printList(&list);
 
+    insertingAtEnd(&list,9);
+    printList(&list);
+
+    //deleting
     deletelastNode(&list);
     printList(&list);
+
 
     return 0;
 }
