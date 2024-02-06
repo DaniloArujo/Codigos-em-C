@@ -32,6 +32,23 @@ void insertAtBeginning(struct node** p, int number){
     }
 };
 
+void deletelastNode(struct node** p){
+    if(*p == NULL || (*p)->next == NULL){
+        free(*p);
+        *p == NULL;
+    }
+    struct node* temp = *p;
+    struct node* temp2 = NULL;
+
+    while (temp->next != NULL){
+        temp2 = temp;
+        temp = temp->next; 
+    }
+    temp2->next = NULL;
+    free(temp);
+    
+};
+
 int main(void){
 
     struct node* list = NULL;
@@ -47,6 +64,9 @@ int main(void){
     insertAtBeginning(&list, 5);
     printList(&list);
     insertAtBeginning(&list, 2);
+    printList(&list);
+
+    deletelastNode(&list);
     printList(&list);
 
     return 0;
