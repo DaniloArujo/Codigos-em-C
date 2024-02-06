@@ -36,7 +36,7 @@ void insertingAtEnd( struct node** p, int number){
     struct node *new = (struct node*)malloc(sizeof(struct node));
     new->value = number;
     new->next = NULL;
-    
+
     if(new == NULL){
             printf("Momory allocation failure");
             return;
@@ -72,6 +72,16 @@ void deletelastNode(struct node** p){
     
 };
 
+
+void DeleteFirstNode(struct node** p){
+    if(*p == NULL){
+        return;
+    }
+    struct node *temp = *p;
+    *p = (*p)->next;
+    free(temp);
+};
+
 int main(void){
 
     struct node* list = NULL;
@@ -97,6 +107,8 @@ int main(void){
     deletelastNode(&list);
     printList(&list);
 
+    DeleteFirstNode(&list);
+    printList(&list);
 
     return 0;
 }
