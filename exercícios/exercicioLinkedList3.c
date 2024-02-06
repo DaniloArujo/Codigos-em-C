@@ -32,6 +32,8 @@ void insertAtBeginning(struct node** p, int number){
     }
 };
 
+
+//not optimezed way
 void deletelastNode(struct node** p){
     if(*p == NULL || (*p)->next == NULL){
         free(*p);
