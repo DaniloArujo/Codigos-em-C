@@ -82,6 +82,35 @@ void DeleteFirstNode(struct node** p){
     free(temp);
 };
 
+void insertAtN(struct node** p, int number, int place){
+    struct node *new = (struct node*)malloc(sizeof(struct node));
+    if(new == NULL){
+        printf("Memory allocation failure");
+    }
+    new->value = number;
+    new->next = NULL;
+    if(number == 1){
+        new->next = *p;
+        (*p) = new;
+        return;
+    };
+    struct node *temp2 = *p;
+
+    for(int i = 0; i < place - 2 && temp2 != NULL; i++){
+        temp2 = temp2->next;
+    };
+
+    if(temp2 == NULL){
+        printf("Invalid place");
+        free(new);
+        return;
+    };
+
+    new->next = temp2->next;
+    temp2->next = new;
+};
+
+
 int main(void){
 
     struct node* list = NULL;
@@ -110,5 +139,13 @@ int main(void){
     DeleteFirstNode(&list);
     printList(&list);
 
+    insertAtN(&list,9,2);
+    printList(&list);
+    
+    insertAtN(&list,9,2);
+    printList(&list);
+    
+    insertAtN(&list,9,2);
+    printList(&list);
     return 0;
 }
