@@ -113,6 +113,26 @@ void insertAtN(struct node** p, int number, int place) {
     temp2->next = new;
 };
 
+
+
+// Function to delete a new node at a specific position in the linked list
+void deleteAtN(struct node **p, int place){
+    if(*p == NULL){
+        printf("Empty list");
+    };
+    struct node *temp1 = *p;
+
+
+    for(int i = 0; i < place - 2 & *p != NULL; i++){
+        temp1 = temp1->next;
+    };
+
+    struct node *temp2 = temp1->next ;
+    temp1->next = temp2->next;
+    free(temp2);
+}
+
+
 int main(void) {
     // Initialize an empty linked list
     struct node* list = NULL;
@@ -151,6 +171,11 @@ int main(void) {
     printList(&list);
 
     insertAtN(&list, 9, 2);
+    printList(&list);
+
+
+    //delete at n position
+    deleteAtN(&list,4);
     printList(&list);
 
     return 0;
