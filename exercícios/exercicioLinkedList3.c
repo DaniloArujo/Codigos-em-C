@@ -57,9 +57,10 @@ void insertingAtEnd(struct node** p, int number) {
 
 // Function to delete the last node from the linked list
 void deletelastNode(struct node** p) {
-    if (*p == NULL || (*p)->next == NULL) {
+    if(*p == NULL || (*p)->next == NULL){
         free(*p);
         *p = NULL;
+        return;
     }
     struct node* temp = *p;
     struct node* temp2 = NULL;
